@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+# Android / Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+
+# AI models
+*.gguf
+*.bin
+
+# Local data
+uploads/
