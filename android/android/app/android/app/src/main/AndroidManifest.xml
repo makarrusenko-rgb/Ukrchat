@@ -7,6 +7,7 @@
         android:allowBackup="true"
         android:label="УкрЧат"
         android:supportsRtl="true">
+        android:usesCleartextTraffic="true">
 
         <activity
             android:name=".MainActivity"
