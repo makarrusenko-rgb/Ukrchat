@@ -19,6 +19,9 @@
             </intent-filter>
 
         </activity>
+        <service
+    android:name=".UkrChatService"
+    android:exported="false" />
 
     </application>
 
