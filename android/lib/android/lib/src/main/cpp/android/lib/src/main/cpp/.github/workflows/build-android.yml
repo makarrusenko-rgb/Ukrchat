@@ -1,0 +1,37 @@
+name: Build UkrChat Android
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Завантажити УкрЧат
+        uses: actions/checkout@v4
+
+      - name: Завантажити llama.cpp
+        uses: actions/checkout@v4
+        with:
+          repository: ggml-org/llama.cpp
+          path: llama.cpp
+
+      - name: Показати структуру
+        run: |
+          echo "УкрЧат:"
+          ls -la
+          echo "llama.cpp:"
+          ls -la llama.cpp
+
+      - name: Підготувати Android build
+        run: |
+          echo "Підготовка збірки УкрЧату..."
+          echo "llama.cpp завантажено у хмарне середовище."
+
+      - name: Build буде додано далі
+        run: |
+          echo "Наступним кроком підключимо Gradle та Android."
